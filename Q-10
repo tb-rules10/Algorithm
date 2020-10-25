@@ -1,0 +1,28 @@
+Algorithm:-
+
+1.  Begin
+
+2.  Def function String RemovePunctuationAndReverse(String str) 
+3.  Input String arr{...} of size 80
+4.  Set index=0
+5.  Set String s1
+6.  Create s, object of scanner class
+7.  Repeat steps 8 to 11 till s.hasNext() becomes false
+8.  Set s1 = s.next()
+9.  If (s1.charAt(s1.length()-1) >=65 && s1.charAt(s1.length()-1)<=90) || 
+       (s1.charAt(s1.length()-1) >=97 && s1.charAt(s1.length()-1)<=122) then Goto 10 otherwise Goto 11
+10. Set arr[index++] = s1
+11. Set arr[index++]=s1.substring(0,s1.length()-1)
+12. Set str=" "
+13. Repeat step 14 from i=index-1 to i=0
+14. Set str=str+ arr[i]+" "
+15. Return str
+
+16. Def function main(String args[]) 
+17. Create object sc of Scanner class
+18. Print "Enter a sentence"
+19. Input String str
+20. Set str = str.substring(0,str.length()-1)
+21. Set str = RemovePunctuationAndReverse(str)
+22. Print (str)
+23. End
