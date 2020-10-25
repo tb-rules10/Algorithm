@@ -1,0 +1,29 @@
+Algorithm:-
+
+1.  Begin
+2.  Print "N = "
+3.  Input n                       //to store an integer
+4.  Input a{...}                  //to store a list of integers of sign nxn
+5.  Set value = 1
+6.  Set row1=0 and col1=0
+7.  Set row2 = n-1 and col2 = n-1
+8.  Set i=0 and j=0
+9.  Repeat steps 10 to 21 untill value<=n*n
+10. Repeat step 11 from i=col1 to i=col2
+11. Set a[row1][i] = value++
+12. Repeat step 13 from i=row1 to i=row2
+13. Set a[i][col2] = value++
+14. Repeat step 15 from i=col2-1 to i=col1
+15. Set a[row2][i] = value++
+16. Repeat step 17 from i=row2-1 to i=row1
+17. Set a[i][col1] = value++
+18. Set col1++
+19. Set col2--
+20. Set row1++
+21. Set row2--
+22. Print "Generated Matrix:"
+23. Repeat step 24 from i=0 to i<n
+24. Repeat step 25 from j=0 to j<n
+25. Print (a[i][j] + "\t")        //in same line
+26. Print ""
+27. End
