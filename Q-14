@@ -1,0 +1,26 @@
+Algorithm:-
+
+1.	Begin
+2.	Int arr[] an array which contains the last date of all the months
+3.	Strign days[] an array which contains the all seven days of the week
+4.	Intialised – String str1 , day , day1; int x,I,dayno,mon,yr,leap1
+5.	A date is asked from the user in the format DD/MM/YY and stored in day1
+6.	Each part of the date is taken out and place into the separate corresponding variables
+7.	Dayno-date /  mon=month / yr=year of the date
+8.	If the entered month is a February then then program checks  whether the it’s a leap year or not
+9.	To checked that the year to be a leap year the year of the entered date has to pass an if statement
+10.	If the year is divisible by 4 and and not divisible by 100 or if the year is divisible by 100 then it is a leap year
+11.	If the line no. 10 statement turns out to be true then the last date of the month February present in arr[] at the location 1 is changed from 28 to 29
+12.	The user is asked for the day at the first January of that specific year and it is stored in str1
+13.	Executed a for loop with “i=0” as loop controller will run till i less then or equal to 7 with the increment of “i+1” after every loop completes. And will repeat line no. 13 to 15
+14.	If str1 is equal to day[i] then execute line no 15
+15.	Store the value of “i“ in “x”
+16.	Executed a for loop with “i=0” and the loop will execute till i is less than equal to 7 , with the increment of “i+1” after the completion of each loop. And will repeat line no. 17 
+17.	 Dayno =dayno+arr[i]
+18.	Executed a for loop with “i=0” as loop controller will run till i less then or equal to (dayno-1) with the increment of “i+1” after every loop completes. And will repeat line no. 19 to 21
+19.	Increment x by 1
+20.	If x is equal to 8 then execute line 21
+21.	X=1
+22.	Print(day1+”:”)
+23.	Print(days[x])
+24.	End
