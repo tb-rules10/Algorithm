@@ -1,0 +1,35 @@
+1.  Begin
+2.  Accept an (class member variable)encoded message from the user (String encoded) and initialize a class member string decoded.
+3.  Reverse the encoded message using following steps- 
+                                       (i)   take a new (empty ) String str.  
+                                       (ii)  start a for loop to store all the characters in the new string Str in the reverse fashion 
+                                       (iii) Replace the encoded message in the the String “encoded” with the reversed encoded msessage.
+4.  To start decoding the message—make another method which will contain
+5.  String str = null, x=null;
+6.  char ch1;
+7.  char ch;
+8.  int code=0;
+9.  i=0;
+10. create a for loop which runs with “i” as a loop controller till I is equal to ((String )encoded’s length -1) .
+11. loop start-
+12. ch=to save the character of string present in encoded at position “i”.
+13. str=str+ch;
+14. if str ‘s length is equal to 2 then Goto 15 otherwise Goto 24
+15. code=converted string into its corresponding int data type value.
+16. if code Is greater than or equal to 65 and less or equal to 90 or code is  greater than equal to 97 and less than or qual to 100 then Goto 17 otherwise Goto 20
+17. Ch1=(char)(code); //code converted into its corresponding value of char data type.
+18. x=x+ch1; // ch1 is added to x;
+19. str=null:
+20. if code is equal to 32 then Goto 21 otherwise Goto 24
+21. ch1=’<space >‘;
+22. a space is added into string “x”
+23. str=null;
+24. else if str ‘s length is equal to 3 then Goto 25 otherwise Goto 30
+25. code=str is converted into corresponding int data type. 
+26. if code is greater than or equal to 100 and less than or equal to 122 then Goto27 otherwise Goto 30
+27. ch1=(char) code;
+28. x=x+ch1;
+29. str =null;
+30. finally store the value of x into decoded===decoded =decoded + x;
+31. print the final decoded message.
+32. End  
