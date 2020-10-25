@@ -1,0 +1,16 @@
+Algorithm:-
+
+1.  Begin
+2.  Print "Enter a number"
+3.  Input n
+4.  Set sum=0, c=0, j=0
+5.  Repeat steps 6 to 10 from i=1 to i<n
+6.  Set sum = i and j = i+1
+7.  Repeat steps 8 and 9 till sum<n
+8.  Set sum = sum + j
+9.  Set j=j+1
+10. If sum == n Goto 11 otherwise Goto 5
+11. Repeat steps 12 from k=i to k<j
+12. If k==i Prtint (k) otherwise Print ("+"+k)        //in same line
+13. Print ""                                          //to leave a line
+14. End
