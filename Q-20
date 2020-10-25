@@ -21,9 +21,9 @@ Algorithm:-
 19. If ch is a vowel then fv[i]=fv[i]+1
 20. Print "\nSentence\tNo. of Vowels\tNo. of Words"
 21. Repeat step 22 from i=0 to i=count-1
-22. Print "(i + 1) + "\t\t" + fv[i] + "\t\t" + fw[i]"
+22. Print ((i + 1) + "\t\t" + fv[i] + "\t\t" + fw[i])
 23. Repeat steps 24 to 31 from i=0 to i=count-1
-24. Print "(i+1) + \t\t"              //in same line
+24. Print ((i+1) + "\t\t")            //in same line
 25. Repeat step 26 from j=0 to j=fv[i]-1
 26. Print "VVV"                       //in same line
 27. Print ""       
