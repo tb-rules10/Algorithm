@@ -1,0 +1,29 @@
+Algorithm:-
+
+1.  Begin
+2.  Print "Enter Hours:"
+3.  Input h                                   //store an integer value
+4.  Print "Enter Minutes:"
+5.  Input m                                   //store an integer value
+6.  If h>=1 && h<=12 and m>=0 && m<=59 then Goto 7 otherwise Goto 23
+7.  Set words{...} = {"", "One", "Two", "Three", "Four", "Five", "Six","Seven", "Eight", "Nine","Ten", 
+        "Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen", 
+        "Twenty","Twenty one", "Twenty two", "Twenty three", "Twenty four", "Twenty five", 
+        "Twenty six","Twenty seven","Twenty eight", "Twenty nine"}
+ 8.  Set String plu, a
+ 9.  If m == 1 or m == 59 then plu = "Minute" otherwise plu = "Minutes"
+ 10. If h == 12 then a = words[1] otherwise a = words[h+10]
+ 11. Print "Output : "+h+":"+m+" ----- "      //in same line
+ 12. If m == 0 then Goto 13 otherwise Goto 14
+ 13. Print (words[h]+" O' clock")
+ 14. If m == 5 then Goto 15 otherwise Goto 16
+ 15. Print ("Quarter past "+words[h])
+ 16. If m == 30 then Goto 17 otherwise Goto 18
+ 17. Print ("Half past "+words[h])
+ 18. If m == 45 then Goto 19 otherwise Goto 20
+ 19. Print ("Quarter to "+a)
+ 20. If m < 30 then Goto 21 otherwise Goto 22
+ 21. Print (words[m]+" "+plu+" past "+words[h])
+ 22. Print (words[60-m]+" "+plu+" to "+a)
+ 23. Print "Invalid Input !"
+ 24. End
