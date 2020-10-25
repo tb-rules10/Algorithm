@@ -1,0 +1,22 @@
+Algorithm:-
+
+1.  Begin
+2.  Set c = 0
+3.  Def function display(String s1, String s2) from 4 to 11
+4.  If s2.length()<=1 then Goto 5 otherwise Goto 7
+5.  Set c=c+1
+6.  Print (s1+s2+", ")
+7.  Repeat steps 8 to 11 from i=0 to i=s2.length()-1
+8.  Set x = substring from i to i+1
+9.  Set y = substring from 0 to i
+10. Set z = substring to i+1
+11. Display (s1+x, y+z)
+12. Def function main(String[] args) from 13 to 19
+13. Print "Input"
+14. Input str                             //stores a sting
+15. Set size                              //length of str
+16. Create object a                       //object of class Anagram
+17. Print "Output"
+18. Invoke function display ("",str)
+19. Print ("Total number of anagrams =" +a.c)
+20. End
