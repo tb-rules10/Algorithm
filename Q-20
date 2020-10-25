@@ -1,0 +1,34 @@
+Algorithm:-
+
+1.  Begin
+2.  Print "Enter Text"
+3.  Input text                        //text is a string
+4.  Convert text to Uppercase
+5.  Set count                         //count no. of tokens(.?!) in text
+6.  If count>10 then Goto 7 otherwise Goto 9
+7.  Print "Maximum 10 sentences allowed"
+8.  Goto 32
+9.  Set s {...}                       //list of strings
+10. Set fw {...}                      //list of integers
+11. Set fv {...}                      //list of integers
+12. Let count = size of 3 lists.
+13. Repeat step 16 for i=0 to i=count-1
+14. Set s[i] = extract and store sentence terminated by ".","!","?"
+15. Repeat steps 16 and 17 from i=0 to i=count-1
+16. Set fw[i] = Count no. of  ".","!","?" in s[i]
+17. Repeat steps 18 and 19 from j=0 to j=s[i].length()-1
+18. Set ch to sore character in s[i] at j
+19. If ch is a vowel then fv[i]=fv[i]+1
+20. Print "\nSentence\tNo. of Vowels\tNo. of Words"
+21. Repeat step 22 from i=0 to i=count-1
+22. Print "(i + 1) + "\t\t" + fv[i] + "\t\t" + fw[i]"
+23. Repeat steps 24 to 31 from i=0 to i=count-1
+24. Print "(i+1) + \t\t"              //in same line
+25. Repeat step 26 from j=0 to j=fv[i]-1
+26. Print "VVV"                       //in same line
+27. Print ""       
+28. Print "\t\t" in same line
+29. Repeat step 30 from j=0 to j=fw[i]-1
+30. Print "WWW"                       //in same line
+31. Print ""
+32. End 
