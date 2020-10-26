@@ -1,0 +1,34 @@
+Algorithm 5:-
+
+1. Start
+2. Declare function sumdig(int n) to sum the no. of digits in a no. N
+3. int s=0
+4. while(n>0) loop from step 5 to 6
+5. s=s+n%10 where n%10 is the last digit of n
+6. n=n/10 to remove the last digit after it has been added
+7. return s
+8. Declare function sumprimefactor(int n)
+9. int i=2, sum=0
+10. while(n>1) loop from steps 11 to 14
+11. if (n%i==0) the execute steps 12 to 13
+12. sum=sum+sumdig(i) where sumdig(i) function returns the sum of no. of digit in i
+13. n=n/i;
+14. else i++
+15. return sum
+16. Declare function iscomposite(int n) to check if N is composite or not
+17. int c=0 is a counter for no. of factors
+18. for loop from 1 to n with an increment of 1 each loop, execute step 19 
+19. if(n%i==0) then c++
+20. if(c>2) then return true
+21. else return false
+22. public static void main(String args[])
+23. Smith ob=new Smith();
+24. Input a no. in int n
+25. if(ob.iscomposite(n) == false) then Print ("You have entered a non-Composite Number.
+    Please enter a composite number")
+26. else execute steps 27 to __
+27. int a=ob.sumdig(n) to store sum of digits in n
+28. int b=ob.sumprimefactor(n) to store sum of digits of prime factors of n
+29. if(a==b) then Print("Smith Number")
+30. else Print("Not Smith Number")
+31. End
