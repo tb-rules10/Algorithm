@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 20:-
 
-1.  Begin
+1.  Start
 2.  Print "Enter Text"
 3.  Input text                        //text is a string
 4.  Convert text to Uppercase
