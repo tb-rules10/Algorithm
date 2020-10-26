@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 2:-
 
-1.  Begin
+1.  Start
 2.  Set c = 0
 3.  Def function display(String s1, String s2) from 4 to 11
 4.  If s2.length()<=1 then Goto 5 otherwise Goto 7
