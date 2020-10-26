@@ -1,6 +1,6 @@
 Algorithm:-
 
-1.  Begin
+1.  Start
 2.  Set month[] = {0,31,28,31,30,31,30,31,31,30,31,30,31}
 3.  Declare dd, mm, yy                       //integer type
 
