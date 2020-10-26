@@ -1,0 +1,19 @@
+Algoritm 14:-
+
+1.	Start
+2.	Initialize class member 3,4,5,6
+3.	Declare int number
+4.	Declare boolean flag
+5.	Declare int distance_after;
+6.	Declare int distance_before
+7.	accept a number from the user and store it in “int number”
+8.	Set flag=false
+9.	distance_after=to find a twin prime present after the specified number 
+10.	distance_before=to find a twin prime present before the specified number
+11.	to find the whether a number is twin no. or not-
+12.	check whether the no itself is a twin prime or no and then check for the specified (number-2 ) if it is then you have the twin prime numbers
+13.	to check whether the number is prime –
+14.	A for loop which have “i=2” as loop control and will run the loop till i is less than n/2 and with the increment of +1 after every loop and will repeat step 15
+15.	If n is divisible by a number then it is not a prime number else it is a prime number
+16. Print the result
+17.	End
