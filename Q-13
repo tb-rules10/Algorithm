@@ -1,4 +1,6 @@
-1.  Begin
+Algorithm 13:-
+
+1.  Start
 2.  Accept an (class member variable)encoded message from the user (String encoded) and initialize a class member string decoded.
 3.  Reverse the encoded message using following steps- 
                                        (i)   take a new (empty ) String str.  
