@@ -1,0 +1,40 @@
+Algorithm:-
+
+1.  Begin
+2.  Declare string str
+3.  Declare a function to input a string of odd number of characters
+4.  declare function generate
+5.  String space=" "
+6.  To check that string is odd no:- if (length of string%2!=0) then execute step 7 to 30 
+7.  String a,b;
+8.  a=substring of str from begining to half the length
+9.  b=substring of str from half to end
+10. Print str string
+11. Int length=length of substring a
+12. int count=1(counter)
+13. for(i=0;i<length;i++) loop from step 14 to 20
+14. String a1=substring of a from start to length-i
+15. String b1=substring of b from i to length
+16. Print a1
+17. for loop from 1 to count with increment of 1 per loop.Execute step 18
+18. Print space
+19. count=count+2
+20. Print b1
+21. count=count-2
+22. for(int i=length-2;i>=0;i--) execute from step 23 to29
+23. String a1=substring of a from start to length-i
+24. String b1=substring of b from i to length
+25. Print a1
+26. count=count-2
+27. for loop from 1 to count with increment of 1 per loop.Execute step 28
+28. Print space
+29. Print b1
+30. Print str
+31. else execute step 32 to 33
+32. Print "Please Enter a word of odd Characters"
+33. System.exit(0)
+34. public static void main (string []args)
+35. diamond obj=new diamond()
+36. obj.input()
+37. obj.generate()
+38. End
