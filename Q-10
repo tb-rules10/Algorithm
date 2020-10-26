@@ -1,6 +1,6 @@
 Algorithm:-
 
-1.  Begin
+1.  Start
 
 2.  Def function String RemovePunctuationAndReverse(String str) 
 3.   Input String arr{...} of size 80
