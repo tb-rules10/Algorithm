@@ -1,0 +1,57 @@
+Algorithm:-
+
+1.  Begin
+2.  Set month[] = {0,31,28,31,30,31,30,31,31,30,31,30,31}
+3.  Declare dd, mm, yy                       //integer type
+
+4.  Def function input(String str)
+5.  Create object sc of Scanner class
+6.  Print (str+":   DAY    :")
+7.  Input dd
+8.  Print "              MONTH  :"
+9.  Input mm
+10. Print "              YEAR   :"
+11. Input yy
+
+12. Def function isLeap(int y)
+13. If(y%4==0&&y%100!=0)||(y%400==0) then Goto 14 otherwise goto 15
+14. Run return 29
+15. Run return 28
+
+16. Def function isvalid()
+17. If isLeap(yy)==29 then Goto 18 otherwise Goto 19
+18. Set month[2]=29
+19. If m<1 or mm>12 then Goto 20 otherwise  Goto 21
+20. Run return 0
+21. If dd<1 or dd>month[mm] then Goto 22 otherwise Goto 23
+22. Run return 0
+23. Run return 1
+
+24. Def function dayno()
+25. Set int dn = 0
+26. Repeat step 27 from i=0 to i<mm
+27. Set dn=dn+month[i]
+28. Set dn = dn + dd
+29. Repeat steps 30 to  from i=1000 to i<yy
+30. If isLeap(i)==29 then Goto 31 otherwise Goto 32
+31. Set dn = dn + 366
+32. Set dn = dn + 365
+33. Run return dn
+
+34. Def function dayselaspsed(DateCalculation x)
+35. If isvalid()==0 then run 36 & 37 otherwise Goto 38
+36. Print "Please Enter a Valid Date"
+37. Run System.exit(0)
+38. If x.isvalid()==0 then run 39 & 40 otherwise goto 41
+39. Print "Please Enter a Valid Date"
+40. Run System.exit(0)
+41. Set int Days=Math.abs(dayno()-x.dayno())
+42. Print ("Days Elapsed = "+Days)
+
+43. Def function main(String args[])
+44. Create objects obj1 And obj2 of class DateCalculation
+45. Run obj1.input("First Date")
+46. Run obj2.input("Second Date")
+47. Run obj1.dayselaspsed(obj2)
+
+48. End
