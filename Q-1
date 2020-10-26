@@ -1,6 +1,6 @@
 Algorithm:-
 
-1.  Begin
+1.  Start
 2.  Declare string str
 3.  Declare a function to input a string of odd number of characters
 4.  declare function generate
