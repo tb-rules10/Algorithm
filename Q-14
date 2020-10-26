@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 15:-
 
-1.	Begin
+1.	Start
 2.	Int arr[] an array which contains the last date of all the months
 3.	Strign days[] an array which contains the all seven days of the week
 4.	Intialised – String str1 , day , day1; int x,I,dayno,mon,yr,leap1
