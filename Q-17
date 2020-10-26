@@ -1,0 +1,14 @@
+Algorithm 1:-
+
+1.	Start
+2.	Accept a number from the array M and N and keep it in order_A and order_B respectively
+3.	Initialize int arrayA[] and int arrayB[] and assign them the size M and N respectively
+4.	Initialize int ArrayC[] and assign it the size M+N
+5.	Now sort the array in ascending order using bubble or selection sort technique , here we have used bubble sort technique. And sorted arrayA[] and arrayB[] separately 
+6.	Now we have to finally merge arratA[] and arratB[] into arrayC[] and sort arrayC[] 
+7.	First add elements of arrayA[] into arrayC[] using for loop
+8.	Then add the elements of arrayB into arrayC. Using for loop
+9.	The above step 7 & 8 are to be filled in arrayC using counter i.e. we have kept the count while filling the elements of arrayA in arrayC and then used the counter to know till where is arrayC filled and filled elements of arrayB in arrayC from (counter+1)
+10.	We finally sort the arrayC using bubble sort technique
+11.	Print the sorted array A then the sorted arrayB and then finally array C
+12.	End
