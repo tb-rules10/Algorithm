@@ -1,0 +1,35 @@
+Algorithm:-
+
+1.  Begin 
+2.  Create object sc of Scanner class
+3.  Print "Natural number less than 1000: "
+4.  Input int n
+5.  If n < 1 or n > 999 then Run 6 & 7 otherwise Goto 8
+6.  Print "Out Of Range" 
+7.  Run return
+8.  Set String ones[] = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
+9.  Set String teens[] = {"ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"}
+10. Set String tens[] = {"", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"}
+11. Input String words
+12. Set boolean threeDigit = n > 99
+13. If n > 99 then run 14, 15 & 16 otherwise Goto 17
+14. Set int d = n/100
+15. Set n = n % 100
+16. Set words += ones[d] + " hundred "
+17. If n > 19 or n == 10 then run 18 to 20 otherwise Goto 21
+18. Set int d = n / 10
+19. Set n = n % 10
+20. Set words += tens[d] + " "
+21. If n > 10 then run 22 to 26 otherwise Goto 27
+22. Set int d = n % 10 
+23. Set n = n / 10
+24. If threeDigit is true then Goto 25 otherwise Goto 26
+25. Set words += "and " + teens[d] 
+26. Set words += teens[d]
+27. If n > 0 then Goto 28 otherwise Goto 31
+28. If threeDigit is true then Goto 29 otherwise Goto 30 
+29. Set words += "and " + ones[n]; 
+30. Set words += ones[n]
+31. Set words = words.toUpperCase()
+32. Print (words)
+33. End
