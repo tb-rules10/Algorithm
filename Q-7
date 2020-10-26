@@ -1,0 +1,32 @@
+Algorithm:-
+
+1.  Begin       
+
+2.  Def function boolean isunique(int n)
+3.   Converting the given number n to String s
+4.   Store length of s in int l
+5.   Declare flag=0, i, j                //integer type
+6.   Repeat step 7 from i=0 to i=l-1     //Loops to check the digits are repeated
+7.   Repeat step 8 from j=i+1 to j>1
+8.   If s.charAt(i)==s.charAt(j) then run 9 & 10 otherwise Goto 7
+9.   Set flag=1                          // if any digits are repeated, then it's not a UniqueNumber 
+10.  Run break statement
+11.  If flag == 0 then return true otherwise return false
+
+12. Def function printinrange(int m, int n) 
+13.  Set int f = 0
+14.  Repeat step 15 from i=m to i<n
+15.  If isunique(i) == true then run 16 & 17 otherwise Goto 18
+16.  Print (i + ", ")                    //in same line
+17.  Set f=f+1
+18.  Print ""                            //to leave a line
+19.  Print ("The total frequency of unique numbers is" + f)
+
+20. Def function main(String args[])
+21.  Create object sc of Scanner class
+22.  Print "Enter 2 numbers"
+23.  Input m and n                       //integer type
+24.  Print "Unique numbers are :-"
+25.  Invoke printinrange(m,n)
+
+26. End
