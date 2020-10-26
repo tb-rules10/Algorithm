@@ -1,6 +1,6 @@
-Algoritmn:-
+Algoritmn 15:-
 
-1.	Begin
+1.	Start
 2.	Accept and sentence from the user and store it in variable s
 3.	Initialize String str2,str
 4.	Initialize i=0,j,w=0
