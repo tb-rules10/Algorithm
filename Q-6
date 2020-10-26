@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 6:-
 
-1.  Begin 
+1.  Start 
 2.  Create object sc of Scanner class
 3.  Print "Natural number less than 1000: "
 4.  Input int n
