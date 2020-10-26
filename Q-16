@@ -9,7 +9,7 @@ Algorithm 16:-
 7.	Pos =(if array_length is divisible by 2 then (array_length/2-1) otherwise array_length/2)
 8.	Final_array[pos]=arr[0];
 9.	A for loop which will have “t=0” as a loop controller which will run till (t<array_length-1) with the 
-    increment of t by 1 after every loop. And will repeat line no. 10 to 15
+     increment of t by 1 after every loop. And will repeat line no. 10 to 15
 10.	If t is no divisible by 2 then excute step 11 to 12
 11.	Set Final_arr[pos+right]=arr[t]
 12.	Set r++
