@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 7:-
 
-1.  Begin       
+1.  Start       
 
 2.  Def function boolean isunique(int n)
 3.   Converting the given number n to String s
