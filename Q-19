@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 19:-
 
-1.  Begin
+1.  Start
 2.  Print "Enter a number"
 3.  Input n
 4.  Set sum=0, c=0, j=0
