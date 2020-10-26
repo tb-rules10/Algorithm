@@ -1,6 +1,6 @@
-Algorithm:-
+Algorithm 3:-
 
-1.  Begin
+1.  Start
 2.  Print "N = "
 3.  Input n                       //to store an integer
 4.  Input a{...}                  //to store a list of integers of sign nxn
