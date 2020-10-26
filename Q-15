@@ -1,0 +1,40 @@
+Algoritmn:-
+
+1.	Begin
+2.	Accept and sentence from the user and store it in variable s
+3.	Initialize String str2,str
+4.	Initialize i=0,j,w=0
+5.	If string is in correct format as per the question then Goto 6 otherwise Print "Invalid Input" and Goto 34
+6.	S=store the whole string of s excluding the full stop
+7.	Scanner sc1=take s in the scanner object
+8.	While to use string tokenizer which is separated by <space>. And repeat step 9 and 10
+9.	sc1.next()
+10.	Set w++
+11.	save w into the newly initialized variable “int l”
+12.	Set int l=w
+13.	Scanner sc1=take s in the scanner object
+14.	String ss[]=new String[l]; //creating a new string of size l
+15.	“i=0”
+16.	While loop which will continue till there are spaces and will repeat line 17 to 20
+17.	str=sc1.next(); //taking every string which is after a space
+18.	str2=Character.toUpperCase(str.charAt(0))+str.substring(1,str.length()); //this line will convert the 
+    first letter of the word to the upper case
+19.	Ss[i]=str2; //this will save every word
+20.	i++
+21.	A for loop which will have “i=0” as a loop controller which will run till i<(length of “ss”-1) with the 
+    increment of i by 1 after every loop. And will repeat line no. 22 to 30
+22.	A for loop which will have “j=0” as a loop controller which will run till j<(length of “ss”-1) with the 
+    increment of j by 1 after every loop. And will repeat line no. 23 to 30
+23.	If “ss[j]“ length is less than ss[j+1] length then execute line 24 to 26
+24.	String t=ss[j]
+25.	Ss[j]=ss[j+1]
+26.	Ss[j+1]=t
+27.	If ss[j] length is equal to ss[j+1] length and (ss[j].compareTo(ss[j+1])>0) then execute 28 to 30
+28.	t=ss[j]
+29.	ss[j]=ss[j+1]
+30.	ss[j+1]=t
+31.	A for loop which will have “i=0” as a loop controller which will run till i<l with the 
+    increment of i by 1 after every loop. And will repeat line no. 32 to 33
+32.	If l is equal to i+1 then print(ss[i]+".");
+33.	Else print(ss[i]+"  ");
+34. End
