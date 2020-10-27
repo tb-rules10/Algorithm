@@ -2,8 +2,8 @@ Algorithm 1:-
 
 1.  Start
 2.  Declare string str
-3.  Declare a function to input a string of odd number of characters
-4.  declare function generate
+3.  Def a function to input a string of odd number of characters
+4.  Def function generate
 5.  String space=" "
 6.  To check that string is odd no:- if (length of string%2!=0) then execute step 7 to 30 
 7.  String a,b;
@@ -33,7 +33,7 @@ Algorithm 1:-
 31. else execute step 32 to 33
 32. Print "Please Enter a word of odd Characters"
 33. System.exit(0)
-34. public static void main (string []args)
+34. Def function public static void main (string []args)
 35. diamond obj=new diamond()
 36. obj.input()
 37. obj.generate()
