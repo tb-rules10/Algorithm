@@ -1,39 +1,43 @@
 Algorithm 4:-
 
 1.  Start
-2.  Declare function isleap(int yy) to check for leap year
-3.  if((yy%4==0 && yy%100!=0 ) || (yy%400==0)) then return 1
-4.  else return 0
-5.  Declare function convert(int dn,int yy)
-6.  Initialise array int day[]={-1,31,28,31,30,31,30,31,31,30,31,30,31}
-7.  Initialise array String mon[]={"","January","February","March","April","May","June","July", "August","September","October","November","December"}
-8.  int mm=1
-9.  if(isleap(yy)==1) then day[2]=29;
-10. while (dn>day[mm]) from steps 11 to 17
-11. dn=dn-day[mm]
-12. mm++
-13. if(mm==13) then execute steps 14 to 17
-14. yy++
-15. mm=1
-16. if(isleap(yy)==1) then day[2]=29
-17. else day[2]=28
-18. String st=""
-19. if(dn==1 ||dn== 21 || dn==31) then st="ST"
-20. else if(dn==2 || dn==22) then st="ND";
-21. else if(dn==3 || dn==23) then st="RD";
-22. else st="TH";
-23. Print(dn+st+" "+mon[mm]+" "+yy
-24. public static void main(string args[])
-25. Declare n,d,yy
-26. Input Day number in n,year in yy and Days Afte N Days in d
-27. if(n<1 || n >366) then run steps 28 to 29
-28. Print("Day number out of range")
-29. End
-30. if(yy<1000 || d>9999) then run steps 31 to 32
-31. Print ("Year out of range")
-32. End
-33. if(d<1 || d >100) then run steps 34 to 35
-34. Print ("Days after N days out of range")
+
+2.  Def function isleap(int yy) to check for leap year
+3.   if((yy%4==0 && yy%100!=0 ) || (yy%400==0)) then return 1
+4.   else return 0
+
+5.  Def function convert(int dn,int yy)
+6.   Initialise array int day[]={-1,31,28,31,30,31,30,31,31,30,31,30,31}
+7.   Initialise array String mon[]={"","January","February","March","April","May","June","July", "August","September","October","November","December"}
+8.   int mm=1
+9.   if(isleap(yy)==1) then day[2]=29;
+10.  while (dn>day[mm]) from steps 11 to 17
+11.  dn=dn-day[mm]
+12.  mm++
+13.  if(mm==13) then execute steps 14 to 17
+14.  yy++
+15.  mm=1
+16.  if(isleap(yy)==1) then day[2]=29
+17.  else day[2]=28
+18.  String st=""
+19.  if(dn==1 ||dn== 21 || dn==31) then st="ST"
+20.  else if(dn==2 || dn==22) then st="ND";
+21.  else if(dn==3 || dn==23) then st="RD";
+22.  else st="TH";
+23.  Print(dn+st+" "+mon[mm]+" "+yy
+
+24. Def function public static void main(string args[])
+25.  Declare n,d,yy
+26.  Input Day number in n,year in yy and Days Afte N Days in d
+27.  if(n<1 || n >366) then run steps 28 to 29
+28.  Print("Day number out of range")
+29.  Goto 40
+30.  if(yy<1000 || d>9999) then run steps 31 to 32
+31.  Print ("Year out of range")
+32.  Goto 40
+33.  if(d<1 || d >100) then run steps 34 to 35
+34.  Print ("Days after N days out of range")
+
 35. End
 36. Print("Date:-")
 37. Call function convert(n,yy)
