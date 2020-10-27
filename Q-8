@@ -5,53 +5,59 @@ Algorithm 15:-
 3.  Declare int n,m
 4.  Declare String s
 5.  Declare int i,j
-6.  Declare function input()
-7.  Input Number of names for 1st array
-8.  Input no. of names for 2nd aray
-9.  Input names for first array
-10. Input names for second array
-11. Declare a function sort()
-12. int flag=0
-13. for(i=0;i<n;i++) loop steps 14 to 21
-14. flag=0
-15. for(j=0;j< n-i-1;j++) loop steps 16 to 20
-16. if(str1[j].compareTo(str1[j+1]) >0) then execute steps 17 to 20
-17. s=str[j]
-18. str1[j]=str[j+1]
-19. str[j+1]=s
-20. flag=1
-21. if(flag==0) then break out of loop
-22. for(i=0;i< m;i++) loop steps 23 to 30
-23. flag=0
-24. for(j=0;j< m-i-1;j++) loop steps 25 to 29
-25. if(str2[j].compareTo(str2[j+1]) >0) then execute steps 26 to 29
-26. s=str2[j]
-27. str2[j]=str2[j+1]
-28. str2[j+1]=s
-29. flag=1
-30. if(flag==0) then break out of loop
-31. Declare function void combine()
-32. int x=0
-33. j=0
-34. i=0
-35. while(i!=n && j!=m) loop steps 36 to 37
-36. if(str1[i].compareTo(str2[j])<=0) then str3[x++]=str1[i++]
-37. else str3[x++]=str2[j++]
-38. if(i==n) then execute steps 39
-39. for(;j<m:j++) loop str3[x++]=str2[j]
-40. else execute step 41
-41. for(;i<n;i++) loop str3[x++]=str1[i]
+
+6.  Def function input()
+7.   Input Number of names for 1st array
+8.   Input no. of names for 2nd aray
+9.   Input names for first array
+10.  Input names for second array
+
+11. Def a function sort()
+12.  int flag=0
+13.  for(i=0;i<n;i++) loop steps 14 to 21
+14.  flag=0
+15.  for(j=0;j< n-i-1;j++) loop steps 16 to 20
+16.  if(str1[j].compareTo(str1[j+1]) >0) then execute steps 17 to 20
+17.  s=str[j]
+18.  str1[j]=str[j+1]
+19.  str[j+1]=s
+20.  flag=1
+21.  if(flag==0) then break out of loop
+22.  for(i=0;i< m;i++) loop steps 23 to 30
+23.  flag=0
+24.  for(j=0;j< m-i-1;j++) loop steps 25 to 29
+25.  if(str2[j].compareTo(str2[j+1]) >0) then execute steps 26 to 29
+26.  s=str2[j]
+27.  str2[j]=str2[j+1]
+28.  str2[j+1]=s
+29.  flag=1
+30.  if(flag==0) then break out of loop
+
+31. Def function void combine()
+32.  int x=0
+33.  j=0
+34.  i=0
+35.  while(i!=n && j!=m) loop steps 36 to 37
+36.  if(str1[i].compareTo(str2[j])<=0) then str3[x++]=str1[i++]
+37.  else str3[x++]=str2[j++]
+38.  if(i==n) then execute steps 39
+39.  for(;j<m:j++) loop str3[x++]=str2[j]
+40.  else execute step 41
+41.  for(;i<n;i++) loop str3[x++]=str1[i]
+
 42. Declare function void display()
-43. Print "Sorted merged array"
-44. Print str3
-45. Print "First array names"
-46. Print str1
-47. Print "Second array names"
-48. Print str2
-49. public static void main(String args[])
-50. merge obj=new merge()
-51. obj.input()
-52. obj.sort()
-53. obj.combine()
-54. obj.display()
+43.  Print "Sorted merged array"
+44.  Print str3
+45.  Print "First array names"
+46.  Print str1
+47.  Print "Second array names"
+48.  Print str2
+
+49. Def function public static void main(String args[])
+50.  merge obj=new merge()
+51.  obj.input()
+52.  obj.sort()
+53.  obj.combine()
+54.  obj.display()
+
 55. End
