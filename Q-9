@@ -1,0 +1,71 @@
+Algorithm 9:-
+
+1.  Start
+
+2.  Def function doCheck(String sentence,int n)
+3.   boolean bool
+4.   bool=checkLength(sentence,n)
+5.   if(!bool) then return
+6.   bool=checkChar(sentence)
+7.   if(!bool) then return
+8.   bool=checkSequence(sentence)
+9.   if(!bool) then return
+10.  bool=checkRepeat(sentence)
+11.  if(!bool) then return
+12.  Print("Valid")
+
+13. Def function boolean checkLength(String str,int n)
+14.  boolean=true
+15.  if(n!=str.length()) then execute steps 16 to 17
+16.  b=flase
+17.  Print"Invalid!String length not the same as specified"
+18.  else if(n>6) then execute steps 19 to 20
+19.  b=false
+20.  Print "Error! Length of string should not exceed 6 characters!"
+21.  return b
+
+22. Def function boolean checkChar(String str)
+23.  int i,len
+24.  len=str.length()
+25.  for(i=0;i<len;i++) loop step 26
+26.  if (str.charAt(i)< 65 || str.charAt(i) >90) then break
+27.  if(i==len) then return true
+28.  else execute steps 29  to 30
+29.  Print "Invalid! Only upper case characters are permitted."
+30.  return false
+
+31. Declare function checkSequence(String str)
+32.  String s1="ACEGIK"
+33.  int i,len
+34.  char ch to store a character
+35.  len=length of string str
+36.  for(i=0;i<len;i++) loop steps 37 to 38
+37.  ch=str.charAt(i);
+38.  if(s1.indexOf(ch)< 0) then break
+39.  if(i==len) then return true
+40.  else execute steps 41 to 42
+41.  Print "Invalid! Only alternate letters are permitted."
+42.  return false
+
+43. Declare function boolean checkRepeat(String str)
+44.  int i,j,len
+45.  char ch
+46.  len=str.length()
+47.  for(i=0;i<len-1;i++) loop steps 48 to 51
+48.  ch=str.charAt(i)
+49.  for(j=i+1;j<len;j++) loop step 50
+50.  if(ch==str.charAt(j)) then break
+51.  if(j!=len) then break
+52.  if(i==len-1) then return true
+53.  else execute steps 54 to 55
+54.  Print "Invalid! Repetition of letters is not permitted."
+55.  return false
+
+56. public static void main(String args[])
+57.  AdvanceOS ob=new AdvanceOS();
+58.  int n
+59.  Input length in n
+60.  Input code in sentence
+61.  ob.doCheck(sentence,n)
+
+62. End
