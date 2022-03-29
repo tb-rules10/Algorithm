@@ -1,5 +1,5 @@
 import java.util.*;
-public class Sorting {
+class Main{
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -10,12 +10,42 @@ public class Sorting {
         for (int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
 
-        System.out.println("Enter 1 for Bubble Sort, 0 for Selection Sort: ");
+        System.out.println("Enter 0 for Bubble Sort, 1 for Selection Sort, 2 for Quick Sort: ");
         int c = sc.nextInt();
         if(c==1)
             bubbleSort(arr);
-        else
+        else if(c==1)
             selectionSort(arr);
+        else{
+            quickSort(arr, 0, n - 1);
+            System.out.println("\nArray after Quick Sort :- ;");
+            printArr(arr);
+        } 
+    }
+
+    static void quickSort(int arr[], int lower, int upper) {
+        if (lower >= upper)
+            return;
+        int p = partition(arr, lower, upper);
+        quickSort(arr, lower, p - 1);
+        quickSort(arr, p + 1, upper);
+    }
+    static int partition(int arr[], int lower, int upper) {
+        int pivot = arr[upper];
+        int j = lower;
+        int tmp;
+        for (int i = lower; i <= upper; i++) {
+            if (arr[i] < pivot) {
+                tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+                j++;
+            }
+        }
+        tmp = arr[upper];
+        arr[upper] = arr[j];
+        arr[j] = tmp;
+        return j;
     }
 
     static void bubbleSort(int arr[]) {
